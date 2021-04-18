@@ -1,0 +1,39 @@
+GET http://localhost:8080/api
+
+###
+
+GET http://localhost:8080/api/22
+
+###
+
+POST http://localhost:8080/api
+Content-Type: application/json
+
+{
+    "name": "learning mongo",
+    "subscribedToChannel":"simplified"
+}
+
+###
+POST http://localhost:8080/api/user/register
+Content-Type: application/json
+
+{
+    "name":"johndoe",
+    "email":"johndoe@gmail.com",
+    "password":"123456"
+}
+
+###
+
+POST http://localhost:8080/api/user/login
+Content-Type: application/json
+
+{
+    "email":"prajjwal@gmail.com",
+    "password":"123456"
+}
+
+###
+GET http://localhost:8080/api/posts
+auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDdhYzYzMWViYWEwYjVhODg4M2M3OTYiLCJpYXQiOjE2MTg3NDUxOTF9.RLBaS-gwlle5ttYG75q9WkkWewh3Q_aS3BGB0n3aZQM
